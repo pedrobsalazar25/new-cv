@@ -1,0 +1,64 @@
+{
+  "entities": {
+    "projects": {
+      "title": "Projects",
+      "description": "Portfolio Projects",
+      "fields": {
+        "title": { "type": "string", "required": true },
+        "subtitle": { "type": "string", "required": false },
+        "category": { "type": "string", "required": true },
+        "categoryLabel": { "type": "string", "required": false },
+        "year": { "type": "string", "required": true },
+        "client": { "type": "string", "required": false },
+        "location": { "type": "string", "required": false },
+        "image": { "type": "string", "required": true },
+        "liveUrl": { "type": "string", "required": false },
+        "faviconUrl": { "type": "string", "required": false },
+        "description": { "type": "string", "required": true },
+        "story": { "type": "string", "required": false },
+        "medium": { "type": "string", "required": true },
+        "featured": { "type": "boolean", "required": false }
+      }
+    },
+    "certifications": {
+      "title": "Certifications",
+      "description": "Certifications & Badges",
+      "fields": {
+        "title": { "type": "string", "required": true },
+        "issuer": { "type": "string", "required": true },
+        "date": { "type": "string", "required": true },
+        "iconUrl": { "type": "string", "required": false },
+        "category": { "type": "string", "required": true }
+      }
+    },
+    "experiences": {
+      "title": "Experience",
+      "description": "Work & Academic Experience",
+      "fields": {
+        "period": { "type": "string", "required": true },
+        "role": { "type": "string", "required": true },
+        "organization": { "type": "string", "required": true },
+        "location": { "type": "string", "required": true },
+        "description": { "type": "string", "required": true }
+      }
+    },
+    "timeLogs": {
+      "title": "Work Time Logs",
+      "description": "Time counter and hours worked tracker logs",
+      "fields": {
+        "taskName": { "type": "string", "required": true },
+        "projectName": { "type": "string", "required": false },
+        "projectId": { "type": "string", "required": false },
+        "category": { "type": "string", "required": true },
+        "startTime": { "type": "string", "required": true },
+        "endTime": { "type": "string", "required": false },
+        "durationSeconds": { "type": "number", "required": true },
+        "hourlyRate": { "type": "number", "required": false },
+        "billable": { "type": "boolean", "required": true },
+        "isBilled": { "type": "boolean", "required": false },
+        "notes": { "type": "string", "required": false },
+        "createdAt": { "type": "string", "required": true }
+      }
+    }
+  }
+}
